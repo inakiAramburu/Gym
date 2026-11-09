@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gym Log</title>
+  <script>
+    // Aplica el tema guardado antes del primer pintado (evita destello)
+    try { document.documentElement.dataset.theme = localStorage.getItem('gym-theme') || 'dark'; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Login -->
+  <div id="login" hidden>
+    <div class="login-card">
+      <h1>💪 Gym Log</h1>
+      <p class="hint">Accede con tu usuario y contraseña</p>
+      <form id="login-form">
+        <input id="login-user" type="text" placeholder="Usuario" autocomplete="username" required>
+        <input id="login-pass" type="password" placeholder="Contraseña" autocomplete="current-password" required>
+        <button class="btn primary" type="submit">Entrar</button>
+      </form>
+      <p id="login-error" hidden></p>
+    </div>
+  </div>
+
+  <!-- App -->
+  <header id="app-header" hidden>
+    <div class="header-top">
+      <h1>💪 Gym Log</h1>
+      <div class="header-right">
+        <button class="icon-btn theme-btn" id="theme-btn" type="button" title="Cambiar tema oscuro / claro">☀️</button>
+        <button class="user-chip" id="user-chip" type="button" title="Cambiar tu contraseña"></button>
+        <button class="btn ghost small" id="logout-btn" type="button">Salir</button>
+      </div>
+    </div>
+    <nav id="tabs">
+      <button data-tab="train" class="active">Entrenar</button>
+      <button data-tab="workouts">Entrenamientos</button>
+      <button data-tab="exercises">Ejercicios</button>
+      <button data-tab="history">Historial</button>
+      <button data-tab="users" id="tab-users-btn" hidden>Usuarios</button>
+    </nav>
+  </header>
+
+  <main id="main" hidden>
+    <section id="tab-train"></section>
+    <section id="tab-workouts" hidden></section>
+    <section id="tab-exercises" hidden></section>
+    <section id="tab-history" hidden></section>
+    <section id="tab-users" hidden></section>
+  </main>
+
+  <div id="toasts"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

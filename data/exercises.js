@@ -1,0 +1,56 @@
+// Catálogo inicial de ejercicios: [grupo muscular, nombre, imagen (public/images/<slug>.jpg)]
+module.exports = [
+  // Pecho
+  ['Pecho', 'Press de banca plano con barra', 'bench-press'],
+  ['Pecho', 'Press de banca inclinado con barra', 'bench-press-incline-barbell'],
+  ['Pecho', 'Press de banca inclinado con mancuernas', 'bench-press-incline-dumbbell'],
+  ['Pecho', 'Aperturas en banco con mancuernas', 'dumbbell-fly'],
+  ['Pecho', 'Aperturas en polea (cruces)', 'cable-cross'],
+  ['Pecho', 'Press en máquina (pec-deck)', 'pec-deck'],
+  ['Pecho', 'Fondos en paralelas', 'dips'],
+  // Espalda
+  ['Espalda', 'Dominadas', 'pull-ups'],
+  ['Espalda', 'Jalón al pecho con barra', 'lat-pulldown'],
+  ['Espalda', 'Jalón al pecho agarre cerrado', 'lat-pulldown-closed'],
+  ['Espalda', 'Remo con barra', 'barbell-row'],
+  ['Espalda', 'Remo en máquina sentado', 'seated-cable-row'],
+  ['Espalda', 'Remo con mancuerna a una mano', 'one-arm-dumbbell-row'],
+  ['Espalda', 'Face pull en polea', 'face-pull'],
+  ['Espalda', 'Pullover con mancuerna', 'pullover'],
+  ['Espalda', 'Hiperextensiones (extensión de espalda)', 'back-extension'],
+  // Piernas
+  ['Piernas', 'Sentadilla con barra', 'squat'],
+  ['Piernas', 'Sentadilla frontal con barra', 'front-squat'],
+  ['Piernas', 'Sentadilla búlgara con mancuernas', 'bulgarian-split-squat'],
+  ['Piernas', 'Prensa de piernas', 'leg-press'],
+  ['Piernas', 'Peso muerto', 'deadlift'],
+  ['Piernas', 'Peso muerto rumano', 'rdl'],
+  ['Piernas', 'Zancadas con mancuernas', 'lunges'],
+  ['Piernas', 'Extensión de cuádriceps en máquina', 'leg-extension'],
+  ['Piernas', 'Flexión de isquiotibiales en máquina', 'leg-curl'],
+  ['Piernas', 'Prensa de gemelos de pie', 'standing-calf-raise'],
+  ['Piernas', 'Elevación de gemelos sentado', 'seated-calf-raise'],
+  // Hombros
+  ['Hombros', 'Press militar con barra', 'military-press'],
+  ['Hombros', 'Press Arnold con mancuernas', 'arnold-press'],
+  ['Hombros', 'Press en máquina (hombros)', 'shoulder-machine'],
+  ['Hombros', 'Elevaciones laterales con mancuernas', 'lateral-raise'],
+  ['Hombros', 'Elevaciones frontales con mancuernas', 'front-raise'],
+  // Bíceps
+  ['Bíceps', 'Curl con barra', 'barbell-curl'],
+  ['Bíceps', 'Curl con mancuernas', 'dumbbell-curl'],
+  ['Bíceps', 'Curl martillo', 'hammer-curl'],
+  ['Bíceps', 'Curl en polea baja', 'cable-curl'],
+  ['Bíceps', 'Curl concentrado', 'concentration-curl'],
+  // Tríceps
+  ['Tríceps', 'Extensiones en polea alta', 'tricep-pushdown'],
+  ['Tríceps', 'Press francés con barra', 'french-press'],
+  ['Tríceps', 'Extensiones tras la nuca con mancuernas', 'overhead-dumbbell-extension'],
+  ['Tríceps', 'Press en máquina (tríceps)', 'tricep-machine'],
+  // Core
+  ['Core', 'Plancha frontal', 'plank'],
+  ['Core', 'Plancha lateral', 'side-plank'],
+  ['Core', 'Crunch en polea alta', 'cable-crunch'],
+  ['Core', 'Elevación de piernas colgado', 'hanging-leg-raise'],
+  ['Core', 'Russian twist', 'russian-twist'],
+];

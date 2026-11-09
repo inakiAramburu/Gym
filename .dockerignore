@@ -1,0 +1,9 @@
+node_modules
+data
+gym.db
+*.db
+*.db-wal
+*.db-shm
+.git
+Dockerfile
+docker-compose.yml

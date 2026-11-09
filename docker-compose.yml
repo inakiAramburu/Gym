@@ -1,0 +1,12 @@
+services:
+  gym:
+    build: .
+    container_name: gym-log
+    ports:
+      - "3000:3000"
+    volumes:
+      # La BD (gym.db) se conserva en ./data aunque se reconstruya el contenedor
+      - ./data:/app/data
+    environment:
+      - DB_PATH=/app/data/gym.db
+    restart: unless-stopped
